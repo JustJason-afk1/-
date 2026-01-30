@@ -1,0 +1,29 @@
+#Задание 1, уровень 1
+class Employee:
+    def __init__(self, name, position):
+        self.name = name
+        self.position = position
+
+    def display_info(self):
+        print(f"Сотрудник: {self.name}, \n "
+              f"Должность: {self.position}")
+
+emp1 = Employee("Колбас", "Человек-Паук")
+emp1.display_info()
+
+#Задание 2, уровень 1
+class Book:
+    def __init__(self, name, author, year):
+        self.__name = name
+        self.author = author
+        self.year = year
+
+    def display_info(self):
+        print(f"Название: {self.__name}, \n "
+              f"Автор: {self.author}, \n "
+              f"Год выпуска: {self.year}")
+
+book1 = Book("Души", "Гоголььь", 1842)
+book1.display_info()
+
+#Задание 1, уровень 2
