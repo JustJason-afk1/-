@@ -1,0 +1,17 @@
+import telebot
+
+bot = telebot.TeleBot("TOKEN")
+
+@bot.message_handler(commands=['info'])
+def main(message):
+    bot.send_message(message.chat.id, "Это бот-консультант")
+
+@bot.message_handler(commands=['start'])
+def start(message):
+    bot.send_message(message.chat.id, "Привет")
+
+@bot.message_handler()
+def echo(message):
+    bot.send_message(message.chat.id, message.text)
+
+bot.polling()
