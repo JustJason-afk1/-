@@ -19,8 +19,6 @@ class Vector2D:
         return math.sqrt(self.x ** 2 + self.y ** 2)
 
 
-# Проверка работы программы
-
 v1 = Vector2D(3, 4)
 v2 = Vector2D(1, -2)
 
